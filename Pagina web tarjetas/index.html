@@ -8,35 +8,127 @@
 </head>
 <body>
     <header>
-        <h1>
-            ENCABEZADO NIVEL 1
-        </h1>
+       <img src="Imagenes/buho.png" alt="buho">
+       <h1>
+        LAWs
+       </h1>
+       <nav>
+            <ul>
+                <li>
+                    Reglamentos
+                </li>
+                <li>
+                    Leyes Locales
+                </li>
+                <li>
+                    Leyes federales
+                </li>
+            </ul>
+       </nav>
+       <button>
+        Ingresar
+       </button>
+       <button>
+        Registrar
+       </button>
+       <input type="text" placeholder="Buscar">
+       <button>
+        Buscar
+       </button>
     </header>
-    <nav>
-        <a href="#">Enlace 1</a>
-        <a href="#">Enlace 2</a>
-        <a href="#">Enlace 3</a>
-        <a href="#">Enlace 4</a>
-    </nav>
     <main>
-        <section>
-            <h2>Encabezado nivel 2</h2>
-            <p>Aquí va texto del primer párrafo.</p>
-            <p>Aquí va texto del segundo párrafo.</p>
-        </section>
-        <aside>
-            <h2>Apartado</h2>
-            <p>Elije una opción</p>
-            <form>
-                <label><input type="checkbox" name="opcion1"> Opción 1</label><br>
-                <label><input type="checkbox" name="opcion2"> Opción 2</label><br>
-                <label><input type="checkbox" name="opcion3"> Opción 3</label><br><br>
-                <button type="submit">Enviar</button>
-            </form>
-        </aside>
+       <section>
+        <img src="Imagenes/ley.png" alt="Leyes">
+        <p>
+            En México, las leyes son normas jurídicas creadas por el Congreso de la Unión<br>
+            o las legislaturas locales, que establecen derechos, obligaciones y sanciones<br>
+            para regular la convivencia social y garantizar el orden. Existen diferentes<br>
+            tipos de leyes, como las federales, generales y nacionales, cada una con su<br>
+            ámbito de aplicación específico. 
+        </p>
+        <a href="https://www.diputados.gob.mx" target="_blank">
+            Conoce más
+        </a>
+       </section>
+        <div>
+            <img src="Imagenes/scjn.png" alt="Institución">       
+        <p>
+            Suprema Corte de Justicia de La Nación
+        </p>  
+        <a href="https://www.scjn.gob.mx" target="_blank">
+            Conoce más
+        </a>
+        </div>
+        <!-- como ingresar un video descargado Ctrl + k + c-->
+        <video controls>
+            <source src="video/Chicago Bulls SIRIUS - The Alan Parsons.mp4" type="video/mp4" />
+        </video>
+        <!-- como ingresar un video desde la dirección o vínculo URL (se agrega "embed" y "?controls=0")-->    
+        <iframe 
+        src="https://www.youtube.com/embed/KqEpJKxclFA/?controls=0" 
+        title="Video Mad World"
+        frameborder="0"
+        allow="acceleromeeter; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        </iframe>
     </main>
     <footer>
-        <p>Sección de información de contacto, derechos de autor, etc.</p>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <a href="">
+            <img src="" alt="">
+        </a>
+        <form action="" method="post">
+            <label for="Nombre">
+                Introduce tú Nombre
+            </label>
+            <input type="text" id="Nombre" placeholder="Juan Pérez García" name="">
+            <label for="Teléfono">
+                Introduce tú Número de Teléfono
+            </label>
+            <input type="tel" id="Teléfono" placeholder="55-00000000" name="">
+            <label for="correo">
+                Introduce tú correo electrónico
+            <input type="email" id="correo" placeholder="leyes@ejemplo.com" name="">
+            </label>
+            <label for="genero">
+                Introduce tú genero
+            </label>
+            <input type="radio" id="femenino" value="femenino" name="" />
+            <label for="femenino"> femenino
+            </label>
+            <input type="radio" id="masculino" value="masculino" name="" />
+            <label for="masculino"> masculino
+            </label>
+            <h3>
+                Selecciona tus colores favoritos:
+            </h3>
+            <label for="rojo"> rojo 
+            </label>
+            <input type="checkbox" id="rojo" name="color">
+            <label for="azul"> azul 
+            </label>
+            <input type="checkbox" id="azul" name="color">
+            <label for="verde"> verde 
+            </label>
+            <input type="checkbox" id="verde" name="color">
+            <h3>
+                Selecciona el día:
+            </h3>
+            <select name="dia" id="day">
+                <option value="lunes"> Lunes </option>
+                <option value="martes"> Martes </option>
+                <option value="miercoles"> Miercoles </option>
+                <option value="jueves"> Jueves </option>
+                <option value="viernes"> Viernes </option>
+            </select>
+            <!--<input type="submit" esta es otra opción para agregar boton para enviar la información-->
+            <button> Enviar </button>
+        </form>
     </footer>
 </body>
 </html>
