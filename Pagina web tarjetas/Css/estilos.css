@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sistema{
+    width: 100px;
+    position: relative;
+    left: 5%;
+    top: 60px;    
+}
+
+/* de la página google fonts, se copia el tipo de letra, del apartado "fonts" */ 
+
+#titulo{
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    position: relative;
+    left: 41%;
+}
+#menu{
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    position: relative;
+    left: 85%;
+    bottom: 140px;
+    /* para eliminar viñetas, se usa esta función list-style:none*/
+    list-style: none;
+}
+.btn{
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    height: 45px;
+    width: 100px;
+    background-color: rgb(0, 38, 255);
+    color: aliceblue;
+    font-size: 15px;
+    position: relative;
+    left: 85%;
+    bottom: 330px;
+    border-radius: 10px;
+}
+#barra{
+    position: relative;
+    left: 30%;
+    bottom: 290px;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
+#buscar{
+    position: relative;
+    left: 30%;
+    bottom: 290px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(0, 38, 255);
+    color: aliceblue;
+}
+#imagen1{
+    width: 250px;
+    position: absolute;
+    left: 150px;
+    top: 20px;
+}
+#tarjeta1{
+   background-image: url(../Imagenes/fondo1.jpg);
+   background-size: cover;
+   border-radius: 20px;
+   border: 5px blue solid;
+   width: 600px;
+   height: 800px;
+   position: relative; 
+}
+#parrafo1{
+    width: 500px;
+    position: absolute;
+    color: black;
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 80px;
+    font-style: normal;
+    font-size: 22px;
+    top: 300px;
+    left: 10%;
+    text-align: justify;
+}
+#enlace1{
+    position: absolute;
+    top: 720px;
+    left: 40%;
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 80px;
+    font-style: normal;
+    font-size: 18px;
+}
+#tarjeta2{
+   background-image: url(../Imagenes/fondo2.jpg);
+   background-size: cover;
+   border-radius: 20px;
+   border: 5px blue solid;
+   width: 600px;
+   height: 600px;
+   position: relative; 
+}
+#parrafo2{
+    width: 500px;
+    position: absolute;
+    color: black;
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 80px;
+    font-style: normal;
+    font-size: 22px;
+    top: 450px;
+    left: 10%;
+    text-align: justify;
+}
+#imagen2{
+    width: 400px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+#enlace2{
+    position: absolute;
+    top: 520px;
+    left: 40%;
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 80px;
+    font-style: normal;
+    font-size: 18px;
+}
+.redes{
+    width: 5%;
+}
+#formulario{
+    width: 30%;
+    font-family: "Playwrite MX Guides", cursive;
+    font-weight: 80px;
+    font-style: normal;
+}
+#Nombre{
+    margin-bottom: 10px;
+}
+#Teléfono{
+    margin-bottom: 10px;
+}
+#Correo{
+    margin-bottom: 10px;
+}

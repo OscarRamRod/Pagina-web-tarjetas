@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cosmos</title>
+    <title> <strong> titulo </strong></title>
+    <!--- de la página google fonts, se copia el tipo de letra, solamente una vez en la etiqueta head-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/estilos.css" />
 </head>
 <body>
     <header>
-       <img src="Imagenes/buho.png" alt="buho">
-       <h1>
+       <img id="sistema" 
+       src="Imagenes/buho.png" 
+       alt="buho">
+       <h1 id="titulo">
         LAWs
        </h1>
        <nav>
-            <ul>
+            <ul id="menu">
                 <li>
                     Reglamentos
                 </li>
@@ -21,41 +27,41 @@
                     Leyes Locales
                 </li>
                 <li>
-                    Leyes federales
+                    Leyes Federales
                 </li>
             </ul>
        </nav>
-       <button>
+       <button class="btn">
         Ingresar
        </button>
-       <button>
+       <button class="btn">
         Registrar
        </button>
-       <input type="text" placeholder="Buscar">
-       <button>
-        Buscar
+       <input id="barra" type="text" placeholder="Buscar">
+       <button id="buscar" class="btn">
+        <strong> Buscar </strong>
        </button>
     </header>
     <main>
-       <section>
-        <img src="Imagenes/ley.png" alt="Leyes">
-        <p>
+       <section id="tarjeta1">
+        <img id="imagen1" src="Imagenes/ley.png" alt="Leyes">
+        <p id="parrafo1">
             En México, las leyes son normas jurídicas creadas por el Congreso de la Unión<br>
             o las legislaturas locales, que establecen derechos, obligaciones y sanciones<br>
             para regular la convivencia social y garantizar el orden. Existen diferentes<br>
             tipos de leyes, como las federales, generales y nacionales, cada una con su<br>
             ámbito de aplicación específico. 
         </p>
-        <a href="https://www.diputados.gob.mx" target="_blank">
+        <a id="enlace1" href="https://www.diputados.gob.mx" target="_blank">
             Conoce más
         </a>
        </section>
-        <div>
-            <img src="Imagenes/scjn.png" alt="Institución">       
-        <p>
+        <div id="tarjeta2">
+            <img id="imagen2" src="Imagenes/scjn.png" alt="Institución">       
+        <p id="parrafo2">
             Suprema Corte de Justicia de La Nación
         </p>  
-        <a href="https://www.scjn.gob.mx" target="_blank">
+        <a id="enlace2" href="https://www.scjn.gob.mx" target="_blank">
             Conoce más
         </a>
         </div>
@@ -73,36 +79,41 @@
         </iframe>
     </main>
     <footer>
-        <a href="">
-            <img src="" alt="">
+        <a href="https://www.facebook.com">
+            <img class="redes" src="Imagenes/facebook.png" alt="facebook">
         </a>
-        <a href="">
-            <img src="" alt="">
+        <a href="https://www.instagram.com">
+            <img class="redes" src="Imagenes/instagram.png" alt="instagram">
         </a>
-        <a href="">
-            <img src="" alt="">
+        <a href="https://www.twitter.com">
+            <img class="redes" src="Imagenes/twitter.png" alt="twitter">
         </a>
-        <form action="" method="post">
+        <form id="formulario" action="" method="post">
+            <fieldset>
+                <legend>Datos de contacro</legend>
             <label for="Nombre">
                 Introduce tú Nombre
             </label>
-            <input type="text" id="Nombre" placeholder="Juan Pérez García" name="">
+            <input type="text" id="Nombre" placeholder="Juan Pérez García" name=""> <br>
             <label for="Teléfono">
                 Introduce tú Número de Teléfono
             </label>
-            <input type="tel" id="Teléfono" placeholder="55-00000000" name="">
+            <input type="tel" id="Teléfono" placeholder="55-00000000" name=""> <br>
             <label for="correo">
                 Introduce tú correo electrónico
-            <input type="email" id="correo" placeholder="leyes@ejemplo.com" name="">
+            <input type="email" id="correo" placeholder="leyes@ejemplo.com" name=""> <br>
             </label>
             <label for="genero">
-                Introduce tú genero
-            </label>
+                Introduce tú genero:
+            </label><br>
             <input type="radio" id="femenino" value="femenino" name="" />
             <label for="femenino"> femenino
-            </label>
+            </label><br>
             <input type="radio" id="masculino" value="masculino" name="" />
             <label for="masculino"> masculino
+            </label><br>
+            <input type="radio" id="no binario" value="no binario" name="" />
+            <label for="no binario"> prefiero no decir
             </label>
             <h3>
                 Selecciona tus colores favoritos:
@@ -125,9 +136,10 @@
                 <option value="miercoles"> Miercoles </option>
                 <option value="jueves"> Jueves </option>
                 <option value="viernes"> Viernes </option>
-            </select>
+            </select> <br>
             <!--<input type="submit" esta es otra opción para agregar boton para enviar la información-->
             <button> Enviar </button>
+            </fieldset>
         </form>
     </footer>
 </body>
